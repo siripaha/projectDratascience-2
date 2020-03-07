@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DataScience</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <style>
+            .cnngineer{
+                background-color: lightgrey;
+                width: 400px;
+                padding: 25px;
+                border: 10px solid navy;
+                margin: 120px;
+            }
+            .cnn {
+               
+                
+            }
+            </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <form method="POST" action="" class="shadow-lg p-3 mb-5 bg-white rounded">
+            {% csrf_token %}
+            <div class="form-group">
+                <center><h2>Test Text</h2></center><br>
+                <textarea class="form-control" rows="3" name="chat" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">test</button>
+            <h1>{{ label }}</h1>
+        </form>
+    </div>
+    <center><div class="row" >
+    <div class="cnngineer">
+        <div class="cnn">
+        <h2>In article: <br>(Harry Mamaysky)</h2>
+        <p>Arab civilians did die at Dir yassin. But there was no massacre. First of all, the village housed many *armed* troops. </p>
+        <div>Nobody ever produced the meagerest evidence for this.  It does not
+            appear in several long published accounts by Irgun participants.
+            Even some Irgun propagandists do not make this claim.<br>
+            <br>>Secondly, the Irgun
+            <br>>and Stern fighters had absolutely no intentions of killing civilians.
+            
+            Several members of the Irgun attacking party, including the leader,
+            deposited personal declarations in the Irgun archives (Jabotinsky
+            Institute, Tel-Aviv) which state that the Lehi proposed to "liquidate
+            the village after the conquest".  It seems the Begin overruled
+            this plan, however the willingness of many of the attackers to
+            seriously consider this possibility serves as instructive
+            character evidence.
+        </div>
+        </div>
+    </div>
+
+    <div class="cnngineer">
+        <h2>In article <br>(Steve Gardner) writes:</h2>
+        <p>...cascades elided to preserve our sanity....<br></p>
+        <div>: That wasn't my point. My point is that your implied position about the "WacoMassacre" is an assertion cum political position. According to a CNN poll,
+            <br>
+            : What you call the "Big Brother Chip" is right now a proposal underdiscussion, and it is not yet clear that strong crypto is going to bebanned.
+            
+            Just to set the record straight, Steve Gardner was not the author of
+            the bit you quoted--I was. Steve just took issue with David's
+            characterization of my words as "pernicious nonsense."<br>
+            
+            I won't further comment on my own views...folks either support 'em or
+            they don't, and the lines in question were neither central to the
+            points I was making in my original post nor to the important debate
+            here in sci.crypt and elsewhere.<br>
+            
+            
+            -Tim May, who continues to hold the same views but doesn't feel like
+            debating politics</div>
+
+    </div>
+
+    <div class="cnngineer">
+        <h2>In article <br>(Roger Maynard) writes:</h2>
+        <p>In <115873@bu.edu> Jason Gibson writes:</p>
+        <div>I can live with the other changes that have been made (e.g. the playoff format change), but the change to the division and conference names really annoys me.<br>
+            "Batman" was on TSN last night saying that changing the names would make the game easier for the "occasional fan to follow".  He should have said what he meant: that changing the names will make the game easier for _Americans_ in non-hockey cities to follow.  I don't know of too many of my friends who had a hard time following which teams were in each division. Even a minimal amount of exposure to the game allows a person to quickly pick up on this.
+            </div>
+    </div>
+</div></center>
+   
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
