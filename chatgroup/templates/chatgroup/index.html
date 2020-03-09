@@ -1,13 +1,35 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>DataScience</title>
+    <title>Data Science Project</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <div class="collapse bg-dark" id="navbarHeader">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-md-7 py-4">
+                <h4 class="text-white">About</h4>
+                <p class="text-muted">ชื่อ-สกุล : นางสาวศิริประภา จารุมูล<br>รหัสนักศึกษา : 61114440717<br>คณะวิทยาศาสตร์ สาขาวิทยาการคอมพิวเตอร์ มหาวิทยาลัยอุบลราชธานี<br>อาจารย์ที่ปรึกษาโปรเจค..<br>ดร. วิชิต สมบัติ <br> ดร. สุภาวดี หิริญพงศ์สิน </p>
+              </div>
+          
+            </div>
+          </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark box-shadow">
+          <div class="container d-flex justify-content-between">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+              <strong>DataScience</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
 
         <style>
             .cnngineer{
@@ -17,116 +39,195 @@
                 border: 10px solid navy;
                 margin: 120px;
             }
-            .cnn {
-               
-                
-            }
-            </style>
+        </style>
 </head>
-
-<body>
-
-
-    <div class="container">
-        <form method="POST" action="" class="shadow-lg p-3 mb-5 bg-white rounded">
-            {% csrf_token %}
-            <div class="form-group">
-                <center><h2>Test Text</h2></center><br>
-                <textarea class="form-control" rows="3" name="chat" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-info btn-lg btn-block">Test</button>
-            <br>
-            <center><h1>{{ label }}</h1></center>
-        </form>
-    </div>
-
-    <div class="row" >
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <div class="card" style="width: 25rem;">
-            <div class="card-body">
-              <h5 class="card-title">From: (Craig Allen Lorie)</h5>
-              <h6 class="card-subtitle mb-2 text-muted">(Craig Allen Lorie) writes:</h6>
-              <p class="card-text">&nbsp;With everyone bitching about the hockey coverage by ESPN its almost like the Detroit-Toronto game was not televised last nite.  I was just thankful to see hockey on a night that it wasn't supposed to be carried.  Thanks to ESPN, no matter why they televised the game</p>
-              <a href="https://github.com/qiwsir/BuildingMachingLearning/blob/master/03/379/raw/rec.sport.hockey/10004-53804" class="card-link">article link</a>
-              <a href="https://github.com/qiwsir/BuildingMachingLearning/tree/master/03/379/raw/rec.sport.hockey" class="card-link">Another link</a>
-            </div>
-          </div>
-
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <div class="card" style="width: 25rem;">
-            <div class="card-body">
-              <h5 class="card-title">In article From (Rex Wang)</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Subject: Tie Breaker....(Isles and Devils)</h6>
-              <p class="card-text"> &nbsp;&nbsp;Are people here stupid or what??? It is a tie breaker, of cause they have to have the same record. How can people be sooooo stuppid to put win as first in the list for tie breaker??? If it is a tie breaker, how can there be different record???? Man, I thought people in this net are good with hockey. I might not be great in Math, but tell me how can two teams ahve the same points with different record??? Man...retard!!!!!! Can't believe people actually put win as first in a tie breaker......</p>
-              <a href="https://github.com/qiwsir/BuildingMachingLearning/blob/master/03/379/raw/rec.sport.hockey/10016-53621" class="card-link">article link</a>
-              <a href="https://github.com/qiwsir/BuildingMachingLearning/tree/master/03/379/raw/rec.sport.hockey" class="card-link">Another link</a>
-            </div>
-          </div>
-
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <div class="card" style="width: 25rem;">
-            <div class="card-body">
-              <h5 class="card-title">From: (Ken Beal) </h5>
-              <h6 class="card-subtitle mb-2 text-muted">Subject: Re: Once tapped, your code is no good any more.</h6>
-              <p class="card-text">&nbsp;&nbsp;Just doing a quick reality check here - is this for real or did someone invent it to provoke a reaction from people?  It sounds more like the sort of thing you'd have heard, suitably rephrased, from the leader of a certain German political party in the 1930's....It sounds like a joke (but then the war on drugs has always been a joke...). </p>
-              <a href="https://github.com/dgrtwo/tidy-text-mining/blob/master/data/20news-bydate/20news-bydate-test/sci.crypt/15739" class="card-link">article link</a>
-              <a href="https://github.com/dgrtwo/tidy-text-mining/tree/master/data/20news-bydate/20news-bydate-test/sci.crypt" class="card-link">Another link</a>
-            </div>
-          </div>
-
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <div class="card" style="width: 25rem;">
-            <div class="card-body">
-              <h5 class="card-title">From: (David Sternlight) </h5>
-              <h6 class="card-subtitle mb-2 text-muted">Subject: Re: The Escrow Database.e</h6>
-              <p class="card-text">This is pernicious nonsense!</p>
-              <p> &nbsp;&nbsp; In what way David?  Our government is totally out of control, whether you realize it or not.  I know you find it painful to think of your old buddy Uncle Sam as evil but it's true.  Other democracies have fallen before.  Ours is on its way and knee-jerk sheep that instinctively trust government are helping it slide. Power corrupts David, why is that so hard to understand?</p>
-              <a href="https://github.com/dgrtwo/tidy-text-mining/blob/master/data/20news-bydate/20news-bydate-test/sci.crypt/15747" class="card-link">article link</a>
-              <a href="https://github.com/dgrtwo/tidy-text-mining/tree/master/data/20news-bydate/20news-bydate-test/sci.crypt" class="card-link">Another link</a>
-            </div>
-          </div>
-          <br><br>
-          
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <div class="card" style="width: 25rem;">
-            <div class="card-body">
-              <h5 class="card-title">From: (Dorin Baru) </h5>
-              <h6 class="card-subtitle mb-2 text-muted">Subject: Re: ISLAM BORDERS vs Israeli borders</h6>
-              <h6>Ilyess Bdira writes:</h6>
-              <p class="card-text"> &nbsp;&nbsp;The Islamic world dreams of being the whole planet, but not by kicking the current inhabitant out, we rather deam of the day everybody converts. If Jews had the same dream, I would not feel threatened a bit. </p>
-              <a href="https://github.com/bahbbc/dataMining20NewsGroup/blob/master/20news-bydate/20news-bydate-train/talk.politics.mideast/75386" class="card-link">article link</a>
-              <a href="https://github.com/bahbbc/dataMining20NewsGroup/tree/master/20news-bydate/20news-bydate-train/talk.politics.mideast" class="card-link">Another link</a>
-            </div>
-          </div>
-
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <div class="card" style="width: 25rem;">
-            <div class="card-body">
-              <h5 class="card-title">From: (Edward A Shnekendorf) </h5>
-              <h6 class="card-subtitle mb-2 text-muted">Subject: Re: ISLAM BORDERS vs Israeli borders</h6>
-              <h6>In article (Ilyess Bdira) writes: </h6>
-              <p class="card-text"> &nbsp;&nbsp;1)why do jews who don't even believe in God (as is the case with many of the founders of secular zionism) have a right in Palestine more than the inhabitants of Palestine, just because God gave you the land? G-d has nothing to do with it. Some of the land was in fact given to the Jews by the United Nations, quite a bit of it was purchased from Arab absentee landlords. Present claims are based on prior ownership (purchase from aforementioned absentee landlords) award by the United Nations in the partition of the Palestine mandate territory, and as the result of defensive wars fought against the Egyptians, Syrians, Jordanians, et al.  </p>
-              <a href="https://github.com/bahbbc/dataMining20NewsGroup/blob/master/20news-bydate/20news-bydate-train/talk.politics.mideast/75404" class="card-link">article link</a>
-              <a href="https://github.com/bahbbc/dataMining20NewsGroup/tree/master/20news-bydate/20news-bydate-train/talk.politics.mideast" class="card-link">Another link</a>
-            </div>
-          </div>
-
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <div class="card" style="width: 25rem;">
-            <div class="card-body">
-              <h5 class="card-title">From: (Alan Stein) </h5>
-              <h6 class="card-subtitle mb-2 text-muted">Subject: Re: Water on the brain (was Re: Israeli Expansion-lust)</h6>
-              <p class="card-text">I guess Hasan finally revealed the source of his claim that Israel diverted water from Lebanon--his imagination.</p>
-              <a href="https://github.com/bahbbc/dataMining20NewsGroup/blob/master/20news-bydate/20news-bydate-train/talk.politics.mideast/75885" class="card-link">article link</a>
-              <a href=https://github.com/bahbbc/dataMining20NewsGroup/tree/master/20news-bydate/20news-bydate-train/talk.politics.mideast" class="card-link">Another link</a>
-            </div>
-          </div>
-
+<br>
+<br>
+<!--================ส่วน test text =================-->
+<div class="container">
+  <form method="POST" action="" class="shadow-lg p- mb-4 bg-white rounded">
+      {% csrf_token %}
+      <div class="form-group"><br>
+          <center><h3>FILL OUT TEST TEXT</h3></center><br>
+          <textarea class="form-control" rows="2" name="chat" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-info btn-lg btn-block">CONFIRM</button>
+      <br>
+      <center><h1>{{ label }}</h1></center>
+  </form>
 </div>
-   
-   
 
+<!--================ส่วน test text =================-->
 
+<!--================ส่วนบล็อกข้อความ =================-->
+<body>
+<br>
+<br>
+
+<div class="album py-5 bg-light">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <div class="card-body">
+              <h5 class="card-title">From : (Craig Allen Lorie)</h5>
+              <h6 class="card-subtitle mb-3 text-muted">rec.sport.hockey </h6>
+              <h6 class="card-subtitle mb-2 text-muted">(Craig Allen Lorie) writes :</h6>
+            <p class="card-text">With everyone bitching about the hockey coverage by ESPN its almost like the Detroit-Toronto game was not televised last nite. I was just thankful to see hockey on a night that it wasn't supposed to be carried. Thanks to ESPN, no matter why they televised the game</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+               <a href="https://github.com/qiwsir/BuildingMachingLearning/blob/master/03/379/raw/rec.sport.hockey/10016-53621" class="card-link">article link</a>
+               <a href="https://github.com/qiwsir/BuildingMachingLearning/tree/master/03/379/raw/rec.sport.hockey" class="card-link">Another link</a>
+              </div>
+              <small class="text-muted">1 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <div class="card-body">
+              <h5 class="card-title">From : (Deepak Chhabra)</h5>
+              <h6 class="card-subtitle mb-3 text-muted">rec.sport.hockey </h6>
+              <h6 class="card-subtitle mb-2 text-muted">Subject: Re: Leaf slump over</h6>
+            <p class="card-text">will still have the Jennings Trophy at the end of the year.  Potvin is very good, and I do believe that he will be a star, but I want to see him perform in the playoffs under pressure. You don't think he is performing "under pressure" now?  The major differences  between playoff hockey....</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                  <a href="https://github.com/qiwsir/BuildingMachingLearning/blob/master/03/379/raw/rec.sport.hockey/10021-53528" class="card-link">article link</a>
+                  <a href="https://github.com/qiwsir/BuildingMachingLearning/tree/master/03/379/raw/rec.sport.hockey" class="card-link">Another link</a>
+              </div>
+              <small class="text-muted">2 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <div class="card-body">
+              <h5 class="card-title">From : (Deepak Chhabra)</h5>
+              <h6 class="card-subtitle mb-3 text-muted">rec.sport.hockey </h6>
+              <h6 class="card-subtitle mb-2 text-muted">Subject: Re:  Potvin's new goalie mask</h6>
+            <p class="card-text">I was wtahcing RIGHT GUARD HOCKEY WEEK on TSN yesterday and they had a feature on this guy that does a lot (most?) of the masks for NHL goalies.  They talked about how they are made, what they are made of, and the designs that are put on them, etc. </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                  <a href="https://github.com/qiwsir/BuildingMachingLearning/blob/master/03/379/raw/rec.sport.hockey/10034-52575" class="card-link">article link</a>
+                  <a href="https://github.com/qiwsir/BuildingMachingLearning/tree/master/03/379/raw/rec.sport.hockey" class="card-link">Another link</a>
+              </div>
+              <small class="text-muted">3 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <div class="card-body">
+              <h5 class="card-title">From: (Ken Beal)</h5>
+              <h6 class="card-subtitle mb-3 text-muted">sci.crypt</h6>
+              <h6 class="card-subtitle mb-2 text-muted">Subject: Re: Once tapped, your code is no good any more.</h6>
+            <p class="card-text">Just doing a quick reality check here - is this for real or did someone invent it to provoke a reaction from people?  It sounds more like the sort of thing you'd have heard, suitably rephrased, from the leader of a certain German political party in the 1930's....It sounds like a joke (but then the war on drugs has always been a joke...).</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                  <a href="https://github.com/dgrtwo/tidy-text-mining/blob/master/data/20news-bydate/20news-bydate-test/sci.crypt/15739" class="card-link">article link</a>
+                  <a href="https://github.com/dgrtwo/tidy-text-mining/tree/master/data/20news-bydate/20news-bydate-test/sci.crypt" class="card-link">Another link</a>
+              </div>
+              <small class="text-muted">4 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <div class="card-body">
+              <h5 class="card-title">From: (David Sternlight)</h5>
+              <h6 class="card-subtitle mb-3 text-muted">sci.crypt</h6>
+              <h6 class="card-subtitle mb-2 text-muted">Subject: Re: The Escrow Database.e</h6>
+            <p class="card-text">In what way David?  Our government is totally out of control, whether you realize it or not.  I know you find it painful to think of your old buddy Uncle Sam as evil but it's true.  Other democracies have fallen before.  Ours is on its way and knee-jerk sheep that instinctively trust government are helping it slide. Power corrupts David, why is that so hard to understand?</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                  <a href="https://github.com/dgrtwo/tidy-text-mining/blob/master/data/20news-bydate/20news-bydate-test/sci.crypt/15747" class="card-link">article link</a>
+                  <a href="https://github.com/dgrtwo/tidy-text-mining/tree/master/data/20news-bydate/20news-bydate-test/sci.crypt" class="card-link">Another link</a>
+              </div>
+              <small class="text-muted">5 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <div class="card-body">
+              <h5 class="card-title">From: (stan)</h5>
+              <h6 class="card-subtitle mb-3 text-muted">talk.politics.mideast</h6>
+              <h6 class="card-subtitle mb-2 text-muted">Subject: Re: Overreacting (was Re: Once tapped, your code is no good any more</h6>
+            <p class="card-text">Can people work within the system before trying to break it?  Examine your history books, and find out how many armed revolutions led to Democratic (or Democratic style) governments.  I think you'll only find one in over five thousand years of written history. That's not very good odds.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                  <a href="https://github.com/dgrtwo/tidy-text-mining/blob/master/data/20news-bydate/20news-bydate-test/sci.crypt/15916" class="card-link">article link</a>
+                  <a href="https://github.com/dgrtwo/tidy-text-mining/tree/master/data/20news-bydate/20news-bydate-test/sci.crypt" class="card-link">Another link</a>
+              </div>
+              <small class="text-muted">6 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <div class="card-body">
+              <h5 class="card-title">From: (Sabri T Atan)</h5>
+              <h6 class="card-subtitle mb-3 text-muted">talk.politics.mideast</h6>
+              <h6 class="card-subtitle mb-2 text-muted">Subject: Re: Turkey-Cyprus-Bosnia-Serbia-Greece (Armenia-Azeris)</h6>
+            <p class="card-text">Well, it did not take long to see how consequent some Greeks are in requesting that Thessaloniki are not called Solun by Bulgarian netters. So, Napoleon, why do you write about Konstantinople and not Istanbul? </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                  <a href="https://github.com/bahbbc/dataMining20NewsGroup/blob/master/20news-bydate/20news-bydate-train/talk.politics.mideast/76032" class="card-link">article link</a>
+                  <a href="https://github.com/bahbbc/dataMining20NewsGroup/tree/master/20news-bydate/20news-bydate-train/talk.politics.mideast" class="card-link">Another link</a>
+              </div>
+              <small class="text-muted">7 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <div class="card-body">
+              <h5 class="card-title">From: (Tim Clock)</h5>
+              <h6 class="card-subtitle mb-3 text-muted">talk.politics.mideast</h6>
+              <h6 class="card-subtitle mb-2 text-muted">Subject: Re: ISLAM BORDERS vs Israeli borders</h6>
+            <p class="card-text">The Islamic world dreams of being the whole planet, but not by kicking the current inhabitant out, we rather deam of the day everybody converts. If Jews had the same dream, I would not feel threatened a bit. </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                  <a href="https://github.com/bahbbc/dataMining20NewsGroup/blob/master/20news-bydate/20news-bydate-train/talk.politics.mideast/75373" class="card-link">article link</a>
+                  <a href="https://github.com/bahbbc/dataMining20NewsGroup/tree/master/20news-bydate/20news-bydate-train/talk.politics.mideast" class="card-link">Another link</a>
+              </div>
+              <small class="text-muted">8 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <div class="card-body">
+              <h5 class="card-title">From: (rintoul bradley e)</h5>
+              <h6 class="card-subtitle mb-3 text-muted">talk.politics.mideast</h6>
+              <h6 class="card-subtitle mb-2 text-muted">Subject: Re: NEWS YOU MAY HAVE MISSED, Apr 20</h6>
+            <p class="card-text">Why do you insist on reposting the entire original post? Don't waste bandwidth, please.  You know how picky us non-Jews can be.  Ha Ha. :| </p>
+            <br><br>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                  <a href="https://github.com/bahbbc/dataMining20NewsGroup/blob/master/20news-bydate/20news-bydate-train/talk.politics.mideast/76002" class="card-link">article link</a>
+                  <a href="https://github.com/bahbbc/dataMining20NewsGroup/tree/master/20news-bydate/20news-bydate-train/talk.politics.mideast" class="card-link">Another link</a>
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--================ส่วนบล็อกข้อความ =================-->
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
